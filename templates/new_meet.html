@@ -1,0 +1,16 @@
+{% extends 'template.html' %}
+{% block content %}
+    <h3>You can create a mufucking post here.</h3>
+
+    <form action= "{{ url_for('add_meet') }}" method= "post" class= "add" >
+        <label><strong> Event Name: </strong></label><input name= "meet_name" type= "text" ><br>
+        <label><strong> Location / Venue Name: </strong></label><input name= "meet_location" type= "text" ><br> 
+        <label><strong> Address: </strong></label><input name= "meet_address" type= "text" ><br> 
+        <label><strong> Contact Email: </strong></label><input name= "meet_contact_email" type= "email" ><br>
+        <label><strong> Event Link: </strong></label><input name= "meet_event_link" type= "text" ><br> 
+        <label><strong> Start Date: </strong></label><input name= "meet_start_date" type= "date" ><br>
+        <label><strong> End Date: </strong></label><input name= "meet_end_date" type= "date" ><br> 
+        <label><strong> Type: </strong></label><input name= "meet_type" type= "text" ><br> 
+        <input class= "button" type= "submit" value= "Save" >
+    </form>
+{% endblock %}

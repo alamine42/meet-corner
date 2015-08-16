@@ -1,9 +1,16 @@
 {% extends 'template.html' %}
 {% block content %}
     <div class="header">
-    	<h1>Weighlifting Events in the Maryland/Potomac Valley LWC</h1>
+    	<h1>A calendar for the weightlifting community.</h1>
     </div>
     
+    {% for m in meets %}
+    	<strong>Location:</strong> {{ m.location }} <br />
+    	<strong>Type:</strong> {{ m.meet_type }} <br />
+    	<strong>Contact Email:</strong> {{ m.contact_email }} <br />
+    	<strong>Date:</strong> {{ m.start_date }} to {{ m.end_date }} <br />
+    {% endfor %}
+
 	<h2>August 2015</h2>
 
 	<table class="calendar">
