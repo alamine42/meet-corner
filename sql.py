@@ -30,6 +30,6 @@ with sqlite3.connect(db_filename) as conn:
         """)
 
         conn.execute("""
-        insert into meets (location, address, contact_email, event_link, start_date, end_date, meet_type)
-        values ('Crossfit South Arlington', '', 'training@epsilonfit.com', 'www.epsilonfit.com', '2015-08-15', '2015-08-16', 'USAW')
+        insert into meets (username, meet_name, location, address, contact_email, event_link, start_date, end_date, meet_type)
+        values ('admin', 'CFSA Throwdown', 'Crossfit South Arlington', '', 'training@epsilonfit.com', 'www.epsilonfit.com', '2015-08-15', '2015-08-16', 'USAW')
         """)
