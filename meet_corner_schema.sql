@@ -7,6 +7,8 @@ create table meet_type (
 -- Main table to hold all meets
 create table meets (
     id              integer primary key autoincrement not null,
+    username        text not null,
+    meet_name       text not null,
     location        text not null,
     address         text,
     contact_email   text not null,
