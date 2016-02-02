@@ -5,12 +5,6 @@ import sqlite3
 from flask_debugtoolbar import DebugToolbarExtension
 from functools import wraps
 
-DATABASE_PATH = 'meet_corner.db'
-USERNAME = 'admin'
-PASSWORD = 'admin'
-SECRET_KEY = 'Hacker5b3weighliftin9'
-DEBUG_TB_INTERCEPT_REDIRECTS = False
-
 app = Flask('__name__')
 
 app.config.from_object(__name__)
